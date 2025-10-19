@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="laboratory.css">
+
 </head>
 <body>
     <nav id="navbar">
@@ -193,88 +195,68 @@ Throughout my journey in college, I’ve learned that coding isn’t just about 
         <section id="laboratory" class="laboratory fade-in">
             <div class="container">
                 <h2 class="section-title">Laboratory Activities</h2>
-                <div class="lab-scroll-container">
-                    <div class="lab-cards">
-                        <div class="lab-card">
-                            <div class="lab-content">
-                                <div class="lab-number">Lab 01</div>
-                                <h3>Introduction to Web Development</h3>
-                                <p>Created a basic HTML page with proper structure, semantic tags, and content organization. Learned about HTML5 elements and document structure.</p>
-                            </div>
-                            <div class="lab-image">
-                                <svg width="100%" height="150" viewBox="0 0 400 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="400" height="150" fill="var(--c-3)"/>
-                                    <text x="200" y="75" font-family="Arial" font-size="24" fill="var(--c-6)" text-anchor="middle" dominant-baseline="middle">HTML5</text>
-                                    <rect x="50" y="100" width="80" height="8" fill="var(--c-6)" opacity="0.7"/>
-                                    <rect x="150" y="100" width="100" height="8" fill="var(--c-6)" opacity="0.7"/>
-                                    <rect x="270" y="100" width="80" height="8" fill="var(--c-6)" opacity="0.7"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="lab-card">
-                            <div class="lab-content">
-                                <div class="lab-number">Lab 02</div>
-                                <h3>CSS Styling and Layout</h3>
-                                <p>Applied CSS styles to enhance visual presentation. Worked with colors, fonts, spacing, and the box model to create attractive layouts.</p>
-                            </div>
-                            <div class="lab-image">
-                                <svg width="100%" height="150" viewBox="0 0 400 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="400" height="150" fill="var(--c-4)"/>
-                                    <rect x="50" y="30" width="100" height="90" rx="5" fill="var(--c-6)" opacity="0.8"/>
-                                    <rect x="170" y="30" width="100" height="90" rx="5" fill="var(--c-6)" opacity="0.8"/>
-                                    <rect x="290" y="30" width="60" height="90" rx="5" fill="var(--c-6)" opacity="0.8"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="lab-card">
-                            <div class="lab-content">
-                                <div class="lab-number">Lab 03</div>
-                                <h3>Responsive Design</h3>
-                                <p>Implemented responsive layouts using media queries and flexible grid systems. Ensured websites work across different screen sizes and devices.</p>
-                            </div>
-                            <div class="lab-image">
-                                <svg width="100%" height="150" viewBox="0 0 400 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="400" height="150" fill="var(--c-2)"/>
-                                    <rect x="50" y="20" width="80" height="110" rx="5" fill="var(--c-6)" opacity="0.7"/>
-                                    <rect x="160" y="35" width="90" height="80" rx="5" fill="var(--c-6)" opacity="0.7"/>
-                                    <rect x="280" y="45" width="70" height="60" rx="5" fill="var(--c-6)" opacity="0.7"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="lab-card">
-                            <div class="lab-content">
-                                <div class="lab-number">Lab 04</div>
-                                <h3>JavaScript Fundamentals</h3>
-                                <p>Explored JavaScript basics including variables, functions, loops, and DOM manipulation. Created interactive features and dynamic content updates.</p>
-                            </div>
-                            <div class="lab-image">
-                                <svg width="100%" height="150" viewBox="0 0 400 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="400" height="150" fill="var(--c-5)"/>
-                                    <text x="200" y="75" font-family="monospace" font-size="32" fill="var(--c-1)" text-anchor="middle" dominant-baseline="middle">{ JS }</text>
-                                    <circle cx="80" cy="40" r="8" fill="var(--c-1)" opacity="0.6"/>
-                                    <circle cx="320" cy="110" r="8" fill="var(--c-1)" opacity="0.6"/>
-                                    <circle cx="120" cy="110" r="8" fill="var(--c-1)" opacity="0.6"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="lab-card">
-                            <div class="lab-content">
-                                <div class="lab-number">Lab 05</div>
-                                <h3>Form Validation and Events</h3>
-                                <p>Implemented form validation using JavaScript. Handled user events, validated input data, and provided user feedback for better user experience.</p>
-                            </div>
-                            <div class="lab-image">
-                                <svg width="100%" height="150" viewBox="0 0 400 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="400" height="150" fill="var(--c-3)"/>
-                                    <rect x="100" y="30" width="200" height="20" rx="3" fill="var(--c-6)" opacity="0.8"/>
-                                    <rect x="100" y="60" width="200" height="20" rx="3" fill="var(--c-6)" opacity="0.8"/>
-                                    <rect x="100" y="90" width="200" height="20" rx="3" fill="var(--c-6)" opacity="0.8"/>
-                                    <circle cx="280" cy="40" r="6" stroke="var(--c-1)" stroke-width="2" fill="none"/>
-                                    <path d="M275 40L278 43L285 36" stroke="var(--c-1)" stroke-width="2" fill="none"/>
-                                </svg>
-                            </div>
-                        </div>
+                <div class="lab-grid">
+
+                <div class="lab-card">
+                    <div class="lab-image">
+                    <img src="activity/1.png" alt="HTML Basics">
+                    <a href="activity/1.png" target="_blank" class="view-btn">View</a>
                     </div>
+                    <div class="lab-content">
+                    <div class="lab-number">Activity 1</div>
+                    <h3>Making a Card</h3>
+                    
+                    </div>
+                </div>
+
+                <div class="lab-card">
+                    <div class="lab-image">
+                    <img src="activity/2.png" alt="CSS Styling">
+                    <a href="activity/2.png" target="_blank" class="view-btn">View</a>
+                    </div>
+                    <div class="lab-content">
+                    <div class="lab-number">Activity 2</div>
+                    <h3>Making a hidden text</h3>
+                    
+                    </div>
+                </div>
+
+                <div class="lab-card">
+                    <div class="lab-image">
+                    <img src="activity/3.png" alt="JavaScript Interaction">
+                    <a href="activity/3.png" target="_blank" class="view-btn">View</a>
+                    </div>
+                    <div class="lab-content">
+                    <div class="lab-number">Activity 3</div>
+                    <h3>Making a dark mode</h3>
+                    
+                    </div>
+                </div>
+
+                <div class="lab-card">
+                    <div class="lab-image">
+                    <img src="activity/4.jpg" alt="Responsive Design">
+                    <a href="activity/4.jpg" target="_blank" class="view-btn">View</a>
+                    </div>
+                    <div class="lab-content">
+                    <div class="lab-number">Activity 4</div>
+                    <h3>To-do List</h3>
+                    
+                    </div>
+                </div>
+
+                <div class="lab-card">
+                    <div class="lab-image">
+                    <img src="activity/5.jpg" alt="Mini Portfolio">
+                    <a href="activity/5.jpg" target="_blank" class="view-btn">View</a>
+                    </div>
+                    <div class="lab-content">
+                    <div class="lab-number">Activity 5</div>
+                    <h3>Mini Portfolio</h3>
+                    
+                    </div>
+                </div>
+
                 </div>
             </div>
         </section>

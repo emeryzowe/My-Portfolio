@@ -826,3 +826,91 @@ footer {
         transform: translateY(-2px);
     }
 }
+
+:root {
+  --c-1: #DEEBE9;
+  --c-2: #C9D5DB;
+  --c-3: #9FB5C4;
+  --c-4: #75909C;
+  --c-5: #4A6570;
+  --c-6: #2C3E45;
+}
+
+.laboratory {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: var(--c-1);
+  color: var(--c-6);
+}
+
+.lab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.lab-card {
+  background: var(--c-2);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lab-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.lab-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 220px;
+  background-color: var(--c-3);
+}
+
+.lab-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: 0.3s ease;
+}
+
+.lab-card:hover img {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
+.view-btn {
+  position: absolute;
+  display: none;
+  padding: 10px 20px;
+  background: var(--c-4);
+  color: var(--c-1);
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.lab-image:hover .view-btn {
+  display: block;
+}
+
+.view-btn:hover {
+  background: var(--c-5);
+}
+
+.lab-content {
+  padding: 20px;
+  background-color: var(--c-2);
+}
+
+.lab-number {
+  font-weight: bold;
+  color: var(--c-4);
+  margin-bottom: 8px;
+}
